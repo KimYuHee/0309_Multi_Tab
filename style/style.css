@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/*reset 시작*/
+*{
+    color: #000;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {list-style: none;}
+
+a {text-decoration: none;}
+a:link {color: #333;}
+a:visited {color: #333;}
+a:hover {color: #444;}
+a:active {color: #555;}
+/*reset 끝*/
+
+/*div#wrap 시작*/
+div#wrap {
+    width: 440px;
+    padding: 20px;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+/*div#wrap 끝*/
+
+
+
+/*멀티탭 시작*/
+
+/*멀티탭 공통 작업 시작*/
+div#tabArea {
+    width: 380px;
+    padding: 10px;
+    /*border: 1px solid #08f;*/
+    margin: 10px;
+}
+button {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border: 1px solid #aaa;
+    border-bottom: none;
+    margin-left: 30px;
+    /*position left로 옮겨도 되지만 tab이 많아지만 불편해짐*/
+    position: relative;
+    top: 1px;
+
+}
+button:first-child {
+    margin-left: 30px;
+}
+button:nth-child(2) {
+    top: 0px;
+    left: -36px;
+    border:none;
+}
+#tabArea #tabContent2 {
+    display: none;
+}
+div#tabArea>div {
+    padding: 24px 10px;
+    border: 1px solid #aaa;
+    display: inline-block;
+    /*width 사용 안하고 맞추기 */
+}
+/*멀티탭 공통 작업*/
+
+/*공지사항 영역*/
+
+#tabArea #tabContent1 {
+    padding: 6px 24px 2px 12px;
+}
+#tabArea #tabContent1 #bbsNotice  li {
+    line-height: 32px;
+}
+#tabArea span:first-child {
+    width: 230px;
+    display: inline-block;
+}
+/*공지사항 영역 끝*/
+
+/*갤러리 영역*/
+img {
+    vertical-align: middle;
+}
+/*갤러리 끝*/
+
+/*멀티탭 클릭 기능 구현*/
+/*멀티탭 끝*/
